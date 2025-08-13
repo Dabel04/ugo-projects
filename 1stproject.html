@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1><strong>Application Form</strong></h1>
+    <br>
+    <br>
+
+    <form>
+        <label for="firstname">First name:</label>
+        <input type="text" id="fname" name="firstname" placeholder="Belchi">
+
+        <label for="lastname">Last name:</label>
+        <input type="text" id="lname" name="lastname" placeholder="iyiegbu"> <br><br>
+
+        <label for="date">Date of birth: </label>
+        <input type="date" id="date" name="date" placeholder="mm/dd/yyyy">
+
+
+        <!-- fix this later -->
+        <label for="age"> &nbsp; Age:</label>
+        <input type="number" id="age" name="age" min="1" max="120"><br><br>
+
+        <!-- fix this later -->
+        <label for="gender">Gender: </label>
+        <select name="gender" id="gender">
+            <option value=""></option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+
+        <label for="email"> Email Address: </label>
+        <input type="email" id="email" name="email" placeholder="enter email address"><br><br>
+
+        <span>Position Avaliable:</span>
+        <input type="radio" id="html" name="pro" value="HTML">
+        <label for="html">Junior Developer</label>
+
+            
+        <input type="radio" id="html" name="pro" value="HTML">
+        <label for="html">Mid-level Developer</label>
+
+        <input type="radio" id="html" name="pro" value="HTML">
+        <label for="html">Senior Developer</label> <br> <br>
+
+
+         <span>Programming Languages</span>
+        <input type="checkbox" id="html" name="pro" value="HTML">
+        <label for="HTML">Java</label>
+
+            
+        <input type="checkbox" id="html" name="pro" value="HTML">
+        <label for="CSS">Javascript</label>
+
+        <input type="checkbox" id="html" name="pro" value="HTML">
+        <label for="Javascript">Python</label><br><br>
+
+        <label for="for"><strong>Password:</strong></label>
+        <input type="password" name="fname" id="input" placeholder="Password" required>
+
+        <label for="for"><strong>Confirm Password:</strong></label>
+        <input type="password" name="fname" id="input" placeholder="Password" required><br><br>
+
+        <input type="submit" value="Submit"> &nbsp;
+        <input type="reset" value="Reset">
+
+
+
+    </form>
+    
+</body>
+</html>
