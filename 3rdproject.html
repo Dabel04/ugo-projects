@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary</title>
+    <style>
+        @import url(https://fonts.google.com/specimen/Red+Hat+Display);
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Red Hat Display";
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: url(./image/pattern-background-desktop.svg);
+            background-size: 100% 280px;
+            background-repeat: no-repeat;
+            background-color: hsl(225, 100%, 94%);
+            padding: 10px; 
+        }
+
+        .box-content{
+            width: 100%;
+            max-width: 400px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .summary-content{
+            padding: 25px;
+        }
+
+        .description{
+            color: hsl(224, 23%, 55%);
+            line-height: 1.6;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        .annualplan{
+            display: flex;
+            align-items: center;
+            background-color: #f8f9fe;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+        }
+
+        .icon{
+            margin-right: 15px;
+        }
+
+        .plan{
+            flex-grow: 1;
+            text-align: left;
+        }
+
+        .plan-name{
+            color: #1f2f56;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .plan-change{
+            color: #382ae1;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .plan-change:hover{
+            color: hsl(224, 23%, 55%);
+        }
+
+        .button{
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: #382ae1;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 25px;
+            cursor: pointer;
+            box-shadow: 0 10px 20px rgba(56, 42, 225, 0.5);
+        }
+
+        .button:hover{
+           background-color: #766cf1; 
+        }
+
+        .cancel-button {
+            color: #7280a7;
+            font-weight: bold;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        .cancel-button:hover {
+            color: #1f2f56;
+        }
+    </style>
+</head>
+<body>
+    <div class="box-content">
+        <div class="hero-image">
+            <img src="image/illustration-hero.svg" alt="">
+        </div>
+
+        <div class="summary-content">
+            <h1 style=" color: #1f2f56; font-size: 24px; margin-bottom: 15px; ">Order Summary</h1>
+
+            <p class="description">
+                You can now listen to millions of songs, <br> audiobooks, and podcasts on any device <br> anywhere you like!
+            </p>
+
+            <div class="annualplan">
+                <div class="icon">
+                    <img src="image/icon-music.svg" alt="">
+                </div>
+
+                <div class="plan">
+                    <div class="plan-name">Annual Plan</div>
+                    <div style=" color: #7280a7;">$59.99/year</div>
+                </div>
+                <a class="plan-change" href="#">change</a>
+            </div>
+
+            <button class="button">Proceed to Payment</button>
+            
+            <a class="cancel-button">Cancel Order</a>
+
+
+
+
+        </div>
+    </div>
+</body>
+</html>
